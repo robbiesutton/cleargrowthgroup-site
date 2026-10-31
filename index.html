@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
 <style>
-/* Layout: one column memo on a single flat background; logo, writing, services list, photo, bio, contact. Clear Growth palette (deep teal, teal, mint, coral), Montserrat throughout. */
+/* Layout: one column memo on a single flat background; logo, thesis, services list, contact. Clear Growth palette (deep teal, teal, mint, coral), Montserrat throughout. */
 :root {
   --bg: #EEF7F4;
   --ink: #12201F;
@@ -53,6 +53,8 @@ body {
 
 .body { display: flex; flex-direction: column; gap: 1.15em; }
 .body p { margin: 0; }
+.body h2 { margin-bottom: 0.1em; }
+.body strong { font-weight: 700; color: var(--deep); }
 
 .eyebrow { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--coral); margin: 0 0 6px; }
 h2 { font-size: 1.35rem; font-weight: 700; line-height: 1.3; color: var(--deep); margin: 0; text-wrap: balance; }
@@ -66,12 +68,7 @@ h2 { font-size: 1.35rem; font-weight: 700; line-height: 1.3; color: var(--deep);
 .price { font-size: 0.95rem; font-weight: 700; color: var(--coral); font-variant-numeric: tabular-nums; }
 .svc p { margin: 0; min-width: 0; font-size: 0.98rem; color: var(--ink); }
 
-figure { margin: 0; }
-.photo { aspect-ratio: 4 / 3; max-width: 100%; background: var(--line); display: grid; place-items: center; color: var(--muted); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; }
-.photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-.bio p { margin: 0; }
-.bio .eyebrow { margin-bottom: 10px; }
 
 .contact { border-top: 2px solid var(--brand); padding-top: 16px; display: flex; flex-wrap: wrap; gap: 6px 24px; font-size: 0.9rem; }
 .contact .name { font-weight: 700; color: var(--deep); width: 100%; }
@@ -98,14 +95,18 @@ figure { margin: 0; }
     <span>Clear Growth Group</span>
   </div>
 
-  <article class="body">
-    <p>You spend real time and money bringing people in. But every product leaks. People show up, some try it, and then most quietly stall somewhere between visiting and getting enough value to come back and pay. Every point of friction inside your product costs you customers and revenue. Larger companies dedicate entire teams to finding exactly where users get stuck and fixing it. Startups rarely have anyone whose full-time job is that.</p>
+  <article class="body" aria-labelledby="thesis-title">
+    <h2 id="thesis-title">Our Thesis</h2>
 
-    <p>That's the work I do. I lead product growth at Meta, where the job is understanding how real people move through a product, measuring where they drop off, and running experiments until fewer of them do. A recent example was an AI product with very low retention. Mapping the funnel showed that users needed a second way into the product from the main app. That one entry point lifted retention by 20 points. Most of growth looks like that once you can see it clearly: small changes, large effects.</p>
+    <p>Every metric a company cares about is the end of a chain of human decisions. Revenue, retention, activation and referrals each add up the choices of many people deciding, step by step, whether to keep going. Growth comes from understanding that chain and making each step easier to take.</p>
 
-    <p>Clear Growth Group brings that same practice to a small number of startups. I start with the data you already have, map the path from first visit to real usage, find the handful of steps costing you the most users, and design and run the fixes with your team. This doesn't replace your marketing or sales. It makes them pay off, because more of the people you're already working hard to bring in actually convert and stay.</p>
+    <p>Most companies invest heavily at the top of the chain. They spend time and money creating demand and bringing people in, and they should. But every product leaks. People show up, some try it, and most quietly stall before they get enough value to come back and pay. Each point of friction makes every dollar and hour spent at the top worth less, and the loss compounds as spend grows.</p>
 
-    <p>Every engagement is tied to measurable outcomes. We agree up front on what metrics should move, and I'm accountable for moving them. If you're investing in bringing people in and suspect too many of them are slipping away, I can help.</p>
+    <p>The leaks are rarely where teams expect them, and guessing rarely fixes them. Finding them takes three disciplines, applied in order. <strong>Understand</strong> how people actually move through the product and where they drop off. <strong>Identify</strong> the few changes with the largest impact, and size them before building anything. <strong>Execute</strong> those changes as experiments, measure the result, and keep only what moves the number.</p>
+
+    <p>This applies to any metric at any company, because every metric rests on behavior that can be measured and changed. The changes that matter are often small. On one AI product with very low retention, mapping the funnel showed that users needed a second way in from the main app. That single entry point lifted retention by 20 points.</p>
+
+    <p>The largest consumer companies work this way by default, with entire teams dedicated to it. Most startups have no one whose full-time job is this work. Clear Growth Group brings that practice to the companies that need it, tied to outcomes we agree on up front and are accountable for moving.</p>
   </article>
 
   <section class="services" aria-labelledby="services-title">
@@ -141,12 +142,6 @@ figure { margin: 0; }
     </ol>
   </section>
 
-  <figure class="photo" id="photo">Photo</figure>
-
-  <section class="bio">
-    <p class="eyebrow">About Robbie</p>
-    <p>Robbie Sutton has spent 10+ years in growth analytics, experimentation, and product strategy, most recently as a Senior Product Growth Manager at Meta. Outside Meta, he has built and run his own products, which taught him how different growth feels when there is no team and no budget behind it. He's especially interested in helping new technologies, including clean energy, reach everyday people faster. He lives in Encinitas with his wife and two daughters.</p>
-  </section>
 
   <footer class="contact">
     <span class="name">Robbie Sutton · Clear Growth Group · San Diego</span>
