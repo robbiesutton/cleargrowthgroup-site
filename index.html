@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Clear Growth Group helps startups find and fix the leaks in their product funnel so their marketing and sales pay off.">
+<meta property="og:title" content="Clear Growth Group">
+<meta property="og:description" content="Big-tech product growth for startups. Find where users get stuck, fix it, and measure the result.">
+<meta property="og:url" content="https://cleargrowthgroup.com/">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect x='1' y='1' width='34' height='34' rx='4' fill='%23EEF7F4' stroke='%23062F2C' stroke-width='2'/%3E%3Cpolyline points='8,26 15,19 20,23 28,11' fill='none' stroke='%23E8472A' stroke-width='3' stroke-linejoin='round' stroke-linecap='round'/%3E%3C/svg%3E">
+<title>Clear Growth Group</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout: one column memo on a single flat background; logo, writing, services list, photo, bio, contact. Clear Growth palette (deep teal, teal, mint, coral), Montserrat throughout. */
+:root {
+  --bg: #EEF7F4;
+  --ink: #12201F;
+  --muted: #55666A;
+  --line: #C6D4D1;
+  --brand: #0E5A52;
+  --deep: #062F2C;
+  --coral: #E8472A;
+  --font: "Montserrat", "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #062F2C; --ink: #E6F2EF; --muted: #9DB5B0; --line: #1F4C47; --brand: #7FE0C7; --deep: #E6F2EF; --coral: #F2694F; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #062F2C; --ink: #E6F2EF; --muted: #9DB5B0; --line: #1F4C47; --brand: #7FE0C7; --deep: #E6F2EF; --coral: #F2694F; color-scheme: dark;
+}
+html, body { background: var(--bg); }
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.75;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 56px 80px;
+}
+.page { max-width: 640px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px; }
+
+.logo { display: flex; align-items: center; gap: 12px; color: var(--deep); }
+.logo svg { width: 36px; height: 36px; flex: none; }
+.logo .mark-line { stroke: var(--coral); }
+.logo span { font-weight: 800; font-size: 1rem; letter-spacing: 0.16em; text-transform: uppercase; }
+
+.body { display: flex; flex-direction: column; gap: 1.15em; }
+.body p { margin: 0; }
+
+.eyebrow { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--coral); margin: 0 0 6px; }
+h2 { font-size: 1.35rem; font-weight: 700; line-height: 1.3; color: var(--deep); margin: 0; text-wrap: balance; }
+
+.services { display: flex; flex-direction: column; gap: 20px; }
+.services ol { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--brand); }
+.svc { display: grid; grid-template-columns: 190px 1fr; gap: 10px 28px; padding-block: 20px; border-bottom: 1px solid var(--line); }
+.svc-head { min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.svc h3 { margin: 0; font-size: 1rem; font-weight: 700; line-height: 1.35; color: var(--ink); }
+.term { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--brand); }
+.price { font-size: 0.95rem; font-weight: 700; color: var(--coral); font-variant-numeric: tabular-nums; }
+.svc p { margin: 0; min-width: 0; font-size: 0.98rem; color: var(--ink); }
+
+figure { margin: 0; }
+.photo { aspect-ratio: 4 / 3; max-width: 100%; background: var(--line); display: grid; place-items: center; color: var(--muted); font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; }
+.photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.bio p { margin: 0; }
+.bio .eyebrow { margin-bottom: 10px; }
+
+.contact { border-top: 2px solid var(--brand); padding-top: 16px; display: flex; flex-wrap: wrap; gap: 6px 24px; font-size: 0.9rem; }
+.contact .name { font-weight: 700; color: var(--deep); width: 100%; }
+.contact span { color: var(--muted); user-select: all; }
+.contact a { color: var(--brand); font-weight: 600; text-decoration: none; }
+.contact a:hover, .contact a:focus-visible { text-decoration: underline; }
+
+@media (max-width: 560px) {
+  body { font-size: 1rem; padding-block: 40px 56px; }
+  .page { gap: 36px; }
+  .svc { grid-template-columns: 1fr; }
+  .contact { flex-direction: column; gap: 4px; }
+}
+</style>
+</head>
+<body>
+
+<main class="page">
+  <div class="logo" aria-label="Clear Growth Group">
+    <svg viewBox="0 0 36 36" aria-hidden="true">
+      <rect x="1" y="1" width="34" height="34" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
+      <polyline class="mark-line" points="8,26 15,19 20,23 28,11" fill="none" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+    </svg>
+    <span>Clear Growth Group</span>
+  </div>
+
+  <article class="body">
+    <p>You spend real time and money bringing people in. But every product leaks. People show up, some try it, and then most quietly stall somewhere between visiting and getting enough value to come back and pay. Every point of friction inside your product costs you customers and revenue. Larger companies dedicate entire teams to finding exactly where users get stuck and fixing it. Startups rarely have anyone whose full-time job is that.</p>
+
+    <p>That's the work I do. I lead product growth at Meta, where the job is understanding how real people move through a product, measuring where they drop off, and running experiments until fewer of them do. A recent example was an AI product with very low retention. Mapping the funnel showed that users needed a second way into the product from the main app. That one entry point lifted retention by 20 points. Most of growth looks like that once you can see it clearly: small changes, large effects.</p>
+
+    <p>Clear Growth Group brings that same practice to a small number of startups. I start with the data you already have, map the path from first visit to real usage, find the handful of steps costing you the most users, and design and run the fixes with your team. This doesn't replace your marketing or sales. It makes them pay off, because more of the people you're already working hard to bring in actually convert and stay.</p>
+
+    <p>Every engagement is tied to measurable outcomes. We agree up front on what metrics should move, and I'm accountable for moving them. If you're investing in bringing people in and suspect too many of them are slipping away, I can help.</p>
+  </article>
+
+  <section class="services" aria-labelledby="services-title">
+    <div>
+      <p class="eyebrow">Services</p>
+      <h2 id="services-title">Three ways to work together</h2>
+    </div>
+    <ol>
+      <li class="svc">
+        <div class="svc-head">
+          <h3>Growth Breakdown &amp; Strategy</h3>
+          <span class="term">One time</span>
+          <span class="price">$2,000</span>
+        </div>
+        <p>A full breakdown of your funnel, from first visit to paying customer. You leave with a basic roadmap: where you're likely leaking, what to measure, and what to test first.</p>
+      </li>
+      <li class="svc">
+        <div class="svc-head">
+          <h3>Growth Sprint</h3>
+          <span class="term">Two months</span>
+          <span class="price">$40,000</span>
+        </div>
+        <p>We run the full Understand, Identify, Execute cycle once, together. I set up the measurement, find the biggest leaks, and execute the fixes with your team. At the end you have results and a roadmap for what to do next.</p>
+      </li>
+      <li class="svc">
+        <div class="svc-head">
+          <h3>Fractional Growth Partner</h3>
+          <span class="term">Monthly retainer</span>
+          <span class="price">$15,000 / month</span>
+        </div>
+        <p>Ongoing growth leadership. I keep running the Understand, Identify, Execute cycle with your team, tied to measurable outcomes. Cancel any time.</p>
+      </li>
+    </ol>
+  </section>
+
+  <figure class="photo" id="photo">Photo</figure>
+
+  <section class="bio">
+    <p class="eyebrow">About Robbie</p>
+    <p>Robbie Sutton has spent 10+ years in growth analytics, experimentation, and product strategy, most recently as a Senior Product Growth Manager at Meta. Outside Meta, he has built and run his own products, which taught him how different growth feels when there is no team and no budget behind it. He's especially interested in helping new technologies, including clean energy, reach everyday people faster. He lives in Encinitas with his wife and two daughters.</p>
+  </section>
+
+  <footer class="contact">
+    <span class="name">Robbie Sutton · Clear Growth Group · San Diego</span>
+    <span>robbie@cleargrowthgroup.com</span>
+    <span>(442) 416-1447</span>
+    <a href="https://www.linkedin.com/in/robbie-sutton/" target="_blank" rel="noopener">LinkedIn</a>
+  </footer>
+</main>
+
+</body>
+</html>
