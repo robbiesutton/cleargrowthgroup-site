@@ -67,6 +67,11 @@ h2 { font-family: var(--display); font-size: 2rem; font-weight: 700; line-height
 .price { font-size: 0.95rem; font-weight: 700; color: var(--coral); font-variant-numeric: tabular-nums; }
 .svc p { margin: 0; min-width: 0; font-size: 0.98rem; color: var(--ink); }
 
+.cta { display: flex; justify-content: center; }
+.btn { display: inline-block; background: var(--coral); color: #FFFFFF; font-family: var(--font); font-weight: 700; font-size: 1.05rem; text-decoration: none; padding: 16px 32px; border-radius: 999px; transition: filter .15s ease; }
+.btn:hover { filter: brightness(0.94); }
+.btn:focus-visible { outline: 3px solid var(--brand); outline-offset: 3px; }
+
 .contact { border-top: 2px solid var(--brand); padding-top: 20px; display: flex; align-items: center; gap: 20px; font-size: 0.9rem; }
 .contact-text { display: flex; flex-wrap: wrap; gap: 4px 24px; min-width: 0; }
 .contact .name { font-weight: 700; color: var(--deep); width: 100%; }
@@ -109,7 +114,7 @@ h2 { font-family: var(--display); font-size: 2rem; font-weight: 700; line-height
   <article class="body" aria-labelledby="thesis-title">
     <h2 id="thesis-title">Our Thesis</h2>
 
-    <p>Every goal is the result of step by step human decisions to keep going. Growth comes from understanding each decision and making it easier.</p>
+    <p>Every goal is the result of step-by-step human decisions to keep going. Growth comes from understanding each decision and making it easier.</p>
 
     <p>Most companies invest heavily in acquiring new customers. But every product leaks and most people quietly stall before they experience enough value to continue coming back and paying. Each point of friction makes every new customer worth less and less.</p>
 
@@ -148,6 +153,10 @@ h2 { font-family: var(--display); font-size: 2rem; font-weight: 700; line-height
     </ol>
   </section>
 
+
+  <section class="cta" aria-label="Book an intro call">
+    <a class="btn" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1aaIY-G2V7JUYt1a1uQU1Mao9Z_8CUlrELxVVna4vM2to6d6K-QeKUmfcJwqwmzdV1tEZQL5GA" target="_blank" rel="noopener">Book an intro call</a>
+  </section>
 
   <footer class="contact">
 <svg class="mark" viewBox="0 0 147 161" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
