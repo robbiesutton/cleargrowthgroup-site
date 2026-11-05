@@ -174,3 +174,8 @@ h1 { font-family: var(--display); font-size: 2.6rem; font-weight: 700; line-heig
   .scoretable .what, .scoretable .more { grid-column: 1 / -1; }
   .scorelink { margin-top: -20px; }
 }
+
+.r-num { display: block; }
+.tag { display: block; margin-top: 6px; font-family: var(--font); font-size: 0.74rem; font-weight: 500; line-height: 1.45; color: var(--muted); }
+.more:empty { padding: 0 !important; }
+@media (max-width: 720px) { .scoretable .result { text-align: left; grid-column: 1 / -1; grid-row: auto; } }
