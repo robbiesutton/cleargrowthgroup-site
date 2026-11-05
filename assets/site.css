@@ -133,3 +133,8 @@ h1 { font-family: var(--display); font-size: 2.6rem; font-weight: 700; line-heig
   .ex { padding: 16px 18px; }
   .next { flex-direction: column; }
 }
+
+/* ---- Tagline (main page) ---- */
+.masthead { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+.tagline { margin: 0; max-width: 520px; text-align: center; font-size: 1.15rem; font-weight: 600; line-height: 1.55; color: var(--muted); text-wrap: balance; }
+@media (max-width: 560px) { .tagline { font-size: 1.02rem; } }
