@@ -3,180 +3,94 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Robbie Sutton’s record of growth calls and experiments: what was tried, the result, and what went wrong.">
+<meta name="description" content="Calls I&#x27;ve made and experiments I&#x27;ve run, with the measured result.">
 <meta property="og:title" content="Scorecard · Clear Growth Group">
-<meta property="og:description" content="The record of growth calls and experiments: what was tried, the result, and what went wrong.">
+<meta property="og:description" content="Calls I&#x27;ve made and experiments I&#x27;ve run, with the measured result.">
 <meta property="og:url" content="https://cleargrowthgroup.com/scorecard/">
-<meta property="og:type" content="article">
+<meta property="og:type" content="website">
 <link rel="icon" href="/brand/clear-growth-logo.svg" type="image/svg+xml">
 <title>Scorecard · Clear Growth Group</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Syne:wght@700&display=swap">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
-<nav class="menu" aria-label="Site">
-  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-panel" aria-label="Open menu"><span></span><span></span><span></span></button>
-  <div class="menu-panel" id="menu-panel" hidden>
+<header class="site-nav">
+  <div class="wrap nav-row">
+    <a class="wordmark" href="/">Clear Growth Group</a>
+    <nav class="menu" aria-label="Site">
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu-panel" aria-label="Open menu"><span></span><span></span><span></span></button>
+      <div class="menu-panel" id="menu-panel" hidden>
       <a href="/">Home</a>
       <a href="/scorecard/" aria-current="page">Scorecard</a>
       <a href="/value-to-owners/">Owners and Investors</a>
+      </div>
+    </nav>
   </div>
-</nav>
-<script src="/assets/menu.js" defer></script>
+</header>
 
-<main class="page">
-  <a class="logotype" href="/" aria-label="Clear Growth Group home">
-<svg viewBox="0 0 565 62" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ClearGrowth">
-<g>
-<path d="M62.2085 41.1296C61.6236 45.4958 60.0735 49.2507 57.5582 52.3944C55.043 55.4798 51.6796 57.8667 47.468 59.5549C43.3149 61.185 38.4599 62 32.903 62C28.1064 62 23.6901 61.3596 19.654 60.0789C15.6764 58.7981 12.196 56.9352 9.21283 54.4901C6.28812 51.9869 4.00685 48.9305 2.36901 45.3211C0.789671 41.6535 0 37.462 0 32.7465C0 27.9728 0.789671 23.7812 2.36901 20.1718C4.00685 16.5624 6.28812 13.5061 9.21283 11.0028C12.196 8.44131 15.6764 6.52019 19.654 5.23944C23.6901 3.95868 28.1064 3.31831 32.903 3.31831C38.5184 3.31831 43.4027 4.16244 47.5557 5.8507C51.7673 7.53896 55.1307 9.95493 57.646 13.0986C60.1612 16.2423 61.6821 20.0263 62.2085 24.4507H52.557C51.7381 21.831 50.4512 19.6188 48.6964 17.8141C46.9416 15.9512 44.7188 14.5249 42.028 13.5352C39.3958 12.5455 36.3541 12.0507 32.903 12.0507C28.5744 12.0507 24.6845 12.8657 21.2334 14.4958C17.7822 16.0676 15.0622 18.3962 13.0734 21.4817C11.1431 24.5089 10.178 28.2639 10.178 32.7465C10.178 37.1709 11.1431 40.9258 13.0734 44.0113C15.0622 47.0385 17.7822 49.338 21.2334 50.9099C24.6845 52.4817 28.5744 53.2676 32.903 53.2676C36.3541 53.2676 39.3958 52.8019 42.028 51.8704C44.6603 50.8808 46.8538 49.4836 48.6086 47.6789C50.3635 45.816 51.6503 43.6329 52.4693 41.1296H62.2085Z" fill="currentColor"/>
-<path d="M73.1303 0H82.8695V60.9521H73.1303V0Z" fill="currentColor"/>
-<path d="M131.203 46.631H140.591C140.123 49.6 138.953 52.2488 137.081 54.5775C135.268 56.8479 132.782 58.6526 129.623 59.9916C126.465 61.2723 122.692 61.9127 118.305 61.9127C113.333 61.9127 108.887 61.0103 104.968 59.2056C101.049 57.3427 97.9779 54.723 95.7552 51.3465C93.5324 47.97 92.421 43.9531 92.421 39.2958C92.421 34.6967 93.5031 30.6798 95.6674 27.2451C97.8317 23.8103 100.815 21.1615 104.617 19.2986C108.478 17.4357 112.923 16.5042 117.954 16.5042C123.16 16.5042 127.488 17.4357 130.939 19.2986C134.449 21.1033 137.052 23.8394 138.748 27.507C140.445 31.1164 141.147 35.6864 140.854 41.2169H102.336C102.628 43.662 103.418 45.8742 104.705 47.8535C106.05 49.7747 107.863 51.2883 110.145 52.3944C112.426 53.4423 115.087 53.9662 118.129 53.9662C121.522 53.9662 124.359 53.2967 126.64 51.9577C128.98 50.6188 130.501 48.8432 131.203 46.631ZM117.69 24.3634C113.713 24.3634 110.437 25.3531 107.863 27.3324C105.29 29.2535 103.623 31.7277 102.862 34.7549H131.027C130.793 31.4948 129.477 28.9624 127.079 27.1577C124.681 25.2948 121.551 24.3634 117.69 24.3634Z" fill="currentColor"/>
-<path d="M169.019 61.9127C165.041 61.9127 161.386 60.9521 158.051 59.031C154.776 57.1099 152.144 54.461 150.155 51.0845C148.224 47.6498 147.259 43.7202 147.259 39.2958C147.259 34.7549 148.254 30.7962 150.242 27.4197C152.231 23.985 154.922 21.307 158.315 19.3859C161.707 17.4648 165.509 16.5042 169.721 16.5042C174.401 16.5042 178.115 17.523 180.864 19.5606C183.613 21.5981 185.573 24.3343 186.743 27.769C187.913 31.2038 188.498 35.046 188.498 39.2958C188.498 41.6826 188.147 44.215 187.445 46.893C186.743 49.5127 185.631 51.9577 184.111 54.2282C182.648 56.4986 180.659 58.3615 178.144 59.8169C175.687 61.2141 172.646 61.9127 169.019 61.9127ZM172.002 53.8789C175.278 53.8789 178.056 53.2676 180.338 52.0451C182.677 50.7643 184.432 49.0178 185.602 46.8056C186.831 44.5934 187.445 42.0901 187.445 39.2958C187.445 36.2103 186.831 33.5906 185.602 31.4366C184.374 29.2244 182.619 27.5362 180.338 26.3718C178.056 25.1493 175.278 24.538 172.002 24.538C167.323 24.538 163.696 25.9061 161.122 28.6423C158.549 31.3784 157.262 34.9296 157.262 39.2958C157.262 42.1484 157.876 44.6808 159.104 46.893C160.391 49.1052 162.146 50.8225 164.369 52.0451C166.592 53.2676 169.136 53.8789 172.002 53.8789ZM187.445 17.4648H197.272V60.9521H188.147C188.147 60.9521 188.088 60.3991 187.971 59.293C187.854 58.1869 187.737 56.8479 187.62 55.2761C187.503 53.646 187.445 52.1033 187.445 50.6479V17.4648Z" fill="currentColor"/>
-<path d="M207.978 17.4648H217.717V60.9521H207.978V17.4648ZM233.51 25.7606C230.352 25.7606 227.632 26.43 225.35 27.769C223.128 29.108 221.343 30.738 219.998 32.6592C218.653 34.5803 217.717 36.4432 217.19 38.2479L217.103 33.3577C217.161 32.7174 217.366 31.7568 217.717 30.4761C218.068 29.1371 218.594 27.6817 219.296 26.1099C220.057 24.538 221.051 23.0244 222.279 21.569C223.566 20.0554 225.116 18.8329 226.93 17.9014C228.801 16.97 230.995 16.5042 233.51 16.5042V25.7606Z" fill="currentColor"/>
-<path d="M271.853 62C266.998 62 262.611 61.3596 258.692 60.0789C254.773 58.7981 251.409 56.9352 248.602 54.4901C245.853 51.9869 243.717 48.9305 242.197 45.3211C240.734 41.7117 240.003 37.6366 240.003 33.0958C240.003 28.4967 240.793 24.3634 242.372 20.6958C243.951 17.0282 246.203 13.9136 249.128 11.3521C252.053 8.73239 255.533 6.75305 259.569 5.41408C263.605 4.0169 268.051 3.31831 272.906 3.31831C278.58 3.31831 283.493 4.19155 287.647 5.93802C291.8 7.68451 295.105 10.1296 297.561 13.2732C300.018 16.3587 301.422 20.0263 301.773 24.2761H292.56C291.8 21.7728 290.542 19.6188 288.787 17.8141C287.091 16.0094 284.897 14.6122 282.207 13.6225C279.574 12.5746 276.474 12.0507 272.906 12.0507C268.227 12.0507 264.161 12.9531 260.71 14.7577C257.317 16.5042 254.714 18.9784 252.901 22.1803C251.088 25.3239 250.181 28.9624 250.181 33.0958C250.181 37.2291 250.971 40.8094 252.55 43.8366C254.188 46.8056 256.645 49.1343 259.92 50.8225C263.196 52.4526 267.261 53.2676 272.116 53.2676C275.86 53.2676 279.136 52.7146 281.943 51.6085C284.81 50.4441 287.179 48.8432 289.05 46.8056C290.922 44.7681 292.238 42.4103 292.999 39.7324L297.474 38.6845C296.655 46.1944 293.964 51.9577 289.401 55.9747C284.897 59.9916 279.048 62 271.853 62ZM295.105 60.9521C295.105 59.0892 295.192 56.9934 295.368 54.6648C295.543 52.2779 295.748 49.862 295.982 47.4169C296.274 44.9136 296.538 42.6723 296.772 40.693H273.257V33.5324H303.966V60.9521H295.105Z" fill="currentColor"/>
-<path d="M314.826 17.4648H324.566V60.9521H314.826V17.4648ZM340.359 25.7606C337.201 25.7606 334.481 26.43 332.199 27.769C329.976 29.108 328.192 30.738 326.847 32.6592C325.502 34.5803 324.566 36.4432 324.039 38.2479L323.952 33.3577C324.01 32.7174 324.215 31.7568 324.566 30.4761C324.917 29.1371 325.443 27.6817 326.145 26.1099C326.906 24.538 327.9 23.0244 329.128 21.569C330.415 20.0554 331.965 18.8329 333.779 17.9014C335.65 16.97 337.844 16.5042 340.359 16.5042V25.7606Z" fill="currentColor"/>
-<path d="M370.981 61.9127C366.126 61.9127 361.768 61.0394 357.907 59.293C354.047 57.5465 351.005 54.985 348.782 51.6085C346.56 48.2319 345.448 44.1277 345.448 39.2958C345.448 34.5221 346.56 30.4469 348.782 27.0704C351.005 23.6357 354.047 21.016 357.907 19.2113C361.768 17.4066 366.126 16.5042 370.981 16.5042C375.836 16.5042 380.164 17.4066 383.967 19.2113C387.769 21.016 390.752 23.6357 392.916 27.0704C395.139 30.4469 396.25 34.5221 396.25 39.2958C396.25 44.1277 395.139 48.2319 392.916 51.6085C390.752 54.985 387.769 57.5465 383.967 59.293C380.164 61.0394 375.836 61.9127 370.981 61.9127ZM370.981 53.9662C373.789 53.9662 376.362 53.4131 378.702 52.307C381.042 51.2009 382.884 49.5418 384.23 47.3296C385.634 45.1174 386.336 42.4394 386.336 39.2958C386.336 36.1521 385.634 33.4742 384.23 31.262C382.884 29.0498 381.042 27.3615 378.702 26.1972C376.421 24.9746 373.847 24.3634 370.981 24.3634C368.115 24.3634 365.512 24.9455 363.172 26.1099C360.832 27.2742 358.931 28.9624 357.469 31.1746C356.065 33.3869 355.363 36.0939 355.363 39.2958C355.363 42.4394 356.065 45.1174 357.469 47.3296C358.873 49.5418 360.744 51.2009 363.084 52.307C365.482 53.4131 368.115 53.9662 370.981 53.9662Z" fill="currentColor"/>
-<path d="M455.543 53.6169L452.647 53.5296L465.37 17.4648H476.074L459.052 60.9521H449.84L436.24 24.7127H439.311L425.36 60.9521H416.147L399.476 17.4648H410.181L422.552 53.6169H419.657L432.116 17.4648H443.522L455.543 53.6169Z" fill="currentColor"/>
-<path d="M480.04 17.4648H510.925V25.4113H480.04V17.4648ZM490.569 5.76338H500.396V60.9521H490.569V5.76338Z" fill="currentColor"/>
-<path d="M555.261 60.9521V35.8028C555.261 33.4742 554.851 31.5531 554.032 30.0394C553.272 28.4676 552.073 27.2742 550.435 26.4592C548.797 25.6441 546.633 25.2366 543.942 25.2366C541.251 25.2366 538.795 25.8188 536.572 26.9831C534.349 28.0892 532.536 29.5737 531.132 31.4366C529.728 33.2995 528.909 35.3662 528.675 37.6366L528.587 32.7465C528.88 30.6507 529.523 28.6423 530.518 26.7211C531.512 24.7418 532.828 22.9953 534.466 21.4817C536.104 19.9681 538.034 18.7746 540.257 17.9014C542.48 16.97 544.937 16.5042 547.627 16.5042C550.143 16.5042 552.453 16.8535 554.559 17.5521C556.723 18.2507 558.566 19.2986 560.087 20.6958C561.666 22.0347 562.865 23.723 563.684 25.7606C564.561 27.7399 565 30.0394 565 32.6592V60.9521H555.261ZM519.462 60.9521V0H529.202V60.9521H519.462Z" fill="currentColor"/>
-</g>
-</svg>
-  </a>
-
-  <header class="intro">
-    <span class="eyebrow">Scorecard</span>
-    <h1>The record</h1>
-    <p class="lede">Calls I've made and experiments I've run, with the measured result.</p>
-    <p class="note">Each result is labeled as reported, forecast, planned, projected or an early reading.</p>
-  </header>
-
-  <section class="score" aria-label="Results">
-    <div class="table-wrap">
+<main class="memo">
+  <div class="wrap">
+  <dl class="memo-head">
+    <div class="row"><dt>Subject</dt><dd class="subject">The record</dd></div>
+  </dl>
+  <section class="sec first">
+    <h2>Summary</h2>
+    <div class="sec-body">
+      <p class="summary">Calls I've made and experiments I've run, with the measured result.</p>
+      <p class="note">Each result is labeled as reported, forecast, planned, projected or an early reading.</p>
+    </div>
+  </section>
+  <section class="sec sec-label">
+    <h2><span class="num">1</span>Results</h2>
+  </section>
+  </div>
+  <div class="exhibit">
     <table class="scoretable">
-      <colgroup><col style="width:22%"><col style="width:19%"><col style="width:21%"><col><col style="width:84px"></colgroup>
+      <colgroup><col style="width:170px"><col style="width:217px"><col style="width:174px"><col><col style="width:100px"></colgroup>
       <thead><tr><th>Company</th><th>Metric</th><th>Result</th><th>What it was</th><th><span class="sr">Link</span></th></tr></thead>
       <tbody>
-        <tr>
-          <td class="co"><div class="co-in"><span class="logo" aria-hidden="true">M</span><span><strong>Meta</strong><span class="kind">User growth</span></span></div></td>
-          <td class="metric"><span class="m-name">MAU / DAU</span><span class="m-move">Facebook, US/Canada</span></td>
-          <td class="result"><span class="r-num">1.75&ndash;2x goal</span><span class="tag">MAU and DAU both beat goal · reported team result, H1 2026</span></td>
-          <td class="what">Led growth priorities, goals and execution across a consumer-product organization.</td>
-          <td class="more"></td>
-        </tr>
-        <tr>
-          <td class="co"><div class="co-in"><span class="logo" aria-hidden="true">M</span><span><strong>Meta</strong><span class="kind">Security adoption</span></span></div></td>
-          <td class="metric"><span class="m-name">Passkey adoption</span><span class="m-move">Facebook, US/Canada</span></td>
-          <td class="result"><span class="r-num">28x</span><span class="tag">Adoption multiplied, beating goal · reported, H1 2026</span></td>
-          <td class="what">Led adoption strategy and experiment reviews for passwordless authentication.</td>
-          <td class="more"></td>
-        </tr>
-        <tr>
-          <td class="co"><div class="co-in"><span class="logo" aria-hidden="true">M</span><span><strong>Meta</strong><span class="kind">Growth recovery</span></span></div></td>
-          <td class="metric"><span class="m-name">Account-recovery success</span><span class="m-move">Facebook / Instagram</span></td>
-          <td class="result"><span class="r-num">+5%</span><span class="tag">Facebook; Instagram back to neutral · launch unblocked · reported, H1 2026</span></td>
-          <td class="what">Led an account-recovery turnaround that helped unblock a major account-platform launch.</td>
-          <td class="more"></td>
-        </tr>
-        <tr>
-          <td class="co"><div class="co-in"><span class="logo" aria-hidden="true">M</span><span><strong>Meta</strong><span class="kind">User growth</span></span></div></td>
-          <td class="metric"><span class="m-name">Monthly active people</span><span class="m-move">Facebook Android / Facebook Lite</span></td>
-          <td class="result"><span class="r-num">Millions of MAP</span><span class="tag">Facebook Android, plus gains on Lite · reported, 2019&ndash;20</span></td>
-          <td class="what">Debugged authentication-funnel and measurement issues to unlock SMS auto-verification growth.</td>
-          <td class="more"></td>
-        </tr>
-        <tr>
-          <td class="co"><div class="co-in"><span class="logo" aria-hidden="true">M</span><span><strong>Meta</strong><span class="kind">Investment secured</span></span></div></td>
-          <td class="metric"><span class="m-name">Approved headcount</span><span class="m-move">Account access</span></td>
-          <td class="result"><span class="r-num">Funded</span><span class="tag">Dozens of new roles approved · forecast of significant incremental revenue, not realized · 2024&ndash;25</span></td>
-          <td class="what">Built a finance-validated business case to expand investment in account access.</td>
-          <td class="more"></td>
-        </tr>
-        <tr>
-          <td class="co"><div class="co-in"><span class="logo" aria-hidden="true">AI</span><span><strong>AI booking product</strong><span class="kind">Experiment</span></span></div></td>
-          <td class="metric"><span class="m-name">Retention</span><span class="m-move">5% &rarr; ~25%</span></td>
-          <td class="result"><span class="r-num">+20 pts</span></td>
-          <td class="what">Restored the entry point lost when ads were turned off.</td>
-          <td class="more"><a href="/case-studies/reducing-churn/" aria-label="Details: Retention">Details &rarr;</a></td>
-        </tr>
-        <tr>
-          <td class="co"><div class="co-in"><span class="logo" aria-hidden="true">AI</span><span><strong>AI booking product</strong><span class="kind">Strategy call</span></span></div></td>
-          <td class="metric"><span class="m-name">Revenue per customer</span><span class="m-move">Broad &rarr; booking-only</span></td>
-          <td class="result"><span class="r-num">3&ndash;4x</span></td>
-          <td class="what">Showed booking users paid 6x more; company refocused on booking businesses.</td>
-          <td class="more"><a href="/case-studies/converting-to-paid/" aria-label="Details: Revenue per customer">Details &rarr;</a></td>
-        </tr>
-        <tr>
-          <td class="co"><div class="co-in"><span class="logo" aria-hidden="true">AI</span><span><strong>AI booking product</strong><span class="kind">Bug fix</span></span></div></td>
-          <td class="metric"><span class="m-name">Calendar connection</span><span class="m-move">83% of users blocked &rarr; fixed</span></td>
-          <td class="result"><span class="r-num">+80 pts</span></td>
-          <td class="what">Found the auth bug stopping most users from connecting Google Calendar.</td>
-          <td class="more"><a href="/case-studies/lifetime-value/" aria-label="Details: Calendar connection">Details &rarr;</a></td>
-        </tr>
-        <tr>
-          <td class="co"><div class="co-in"><span class="logo" aria-hidden="true">M</span><span><strong>Meta</strong><span class="kind">Growth capacity</span></span></div></td>
-          <td class="metric"><span class="m-name">Daily SMS capacity</span><span class="m-move">Allocated to growth launches</span></td>
-          <td class="result"><span class="r-num">Tiered budget</span><span class="tag">Capacity split across lower- and higher-cost tiers · allocated, 2025 · savings not quantified</span></td>
-          <td class="what">Introduced tiered budgets and ROI guardrails to fund higher-value growth.</td>
-          <td class="more"></td>
-        </tr>
-        <tr>
-          <td class="co"><div class="co-in"><span class="logo" aria-hidden="true">M</span><span><strong>Meta</strong><span class="kind">Cost reallocation</span></span></div></td>
-          <td class="metric"><span class="m-name">Daily paid-SMS cost</span><span class="m-move">And regional MAU</span></td>
-          <td class="result"><span class="r-num">Lower cost</span><span class="tag">Daily cost and volume down · developed-market MAU neutral; some non-developed-market MAU loss expected · early reading, 2024</span></td>
-          <td class="what">Retired lower-return features to redirect a scarce messaging budget toward better opportunities.</td>
-          <td class="more"></td>
-        </tr>
-        <tr>
-          <td class="co"><div class="co-in"><span class="logo" aria-hidden="true">M</span><span><strong>Meta</strong><span class="kind">Growth protection</span></span></div></td>
-          <td class="metric"><span class="m-name">Monthly active people</span><span class="m-move">Projected impact preserved</span></td>
-          <td class="result"><span class="r-num">Millions of MAP</span><span class="tag">Projected loss mitigated · implementation not confirmed · 2020</span></td>
-          <td class="what">Challenged security-hardening trade-offs and identified mitigations for customer growth.</td>
-          <td class="more"></td>
-        </tr>
-        <tr>
-          <td class="co"><div class="co-in"><span class="logo" aria-hidden="true">M</span><span><strong>Meta</strong><span class="kind">Adoption opportunity</span></span></div></td>
-          <td class="metric"><span class="m-name">Eligible business Pages</span><span class="m-move">Shopify connector eligibility</span></td>
-          <td class="result"><span class="r-num">18x</span><span class="tag">Planned · adoption lift not yet established · 2026</span></td>
-          <td class="what">Co-led eligibility expansion and stronger upsell plans for an e-commerce connector.</td>
-          <td class="more"></td>
-        </tr>
+        <tr><td class="co">AI booking product</td><td><span class="m">Retention</span><span class="sub">Experiment</span></td><td class="res">+20 pts</td><td>Restored the entry point lost when ads were turned off.</td><td class="more"><a href="/case-studies/reducing-churn/" aria-label="Details: Retention">Details &rarr;</a></td></tr>
+        <tr><td class="co">AI booking product</td><td><span class="m">Revenue per customer</span><span class="sub">Strategy call</span></td><td class="res">3–4x</td><td>Showed booking users paid 6x more; company refocused on booking businesses.</td><td class="more"><a href="/case-studies/converting-to-paid/" aria-label="Details: Revenue per customer">Details &rarr;</a></td></tr>
+        <tr><td class="co">AI booking product</td><td><span class="m">Calendar connection</span><span class="sub">Bug fix</span></td><td class="res">+80 pts</td><td>Found the auth bug stopping most users from connecting Google Calendar.</td><td class="more"><a href="/case-studies/lifetime-value/" aria-label="Details: Calendar connection">Details &rarr;</a></td></tr>
+        <tr><td class="co">Meta</td><td><span class="m">MAU / DAU</span><span class="sub">User growth</span></td><td class="res">1.75–2x goal</td><td>Led growth priorities, goals and execution across a consumer-product organization. Reported team result, H1 2026.</td><td class="more"></td></tr>
+        <tr><td class="co">Meta</td><td><span class="m">Passkey adoption</span><span class="sub">Security adoption</span></td><td class="res">28x</td><td>Led adoption strategy and experiment reviews for passwordless authentication. Beat goal. Reported, H1 2026.</td><td class="more"></td></tr>
+        <tr><td class="co">Meta</td><td><span class="m">Account-recovery success</span><span class="sub">Growth recovery</span></td><td class="res">+5%</td><td>Led an account-recovery turnaround that helped unblock a major account-platform launch. +5% on Facebook; Instagram back to neutral. Reported, H1 2026.</td><td class="more"></td></tr>
+        <tr><td class="co">Meta</td><td><span class="m">Monthly active people</span><span class="sub">User growth</span></td><td class="res">Millions of MAP</td><td>Debugged authentication-funnel and measurement issues to unlock SMS auto-verification growth. Facebook Android, plus gains on Lite. Reported, 2019–20.</td><td class="more"></td></tr>
+        <tr><td class="co">Meta</td><td><span class="m">Approved headcount</span><span class="sub">Investment secured</span></td><td class="res">Funded</td><td>Built a finance-validated business case to expand investment in account access. Dozens of roles approved; revenue was a forecast, not realized. 2024–25.</td><td class="more"></td></tr>
+        <tr><td class="co">Meta</td><td><span class="m">Daily SMS capacity</span><span class="sub">Growth capacity</span></td><td class="res">Tiered budget</td><td>Introduced tiered budgets and ROI guardrails to fund higher-value growth. Allocated, 2025; savings not quantified.</td><td class="more"></td></tr>
+        <tr><td class="co">Meta</td><td><span class="m">Daily paid-SMS cost</span><span class="sub">Cost reallocation</span></td><td class="res">Lower cost</td><td>Retired lower-return features to redirect a scarce messaging budget toward better opportunities. Developed-market MAU neutral; some MAU loss expected in other markets. Early reading, 2024.</td><td class="more"></td></tr>
+        <tr><td class="co">Meta</td><td><span class="m">Monthly active people</span><span class="sub">Growth protection</span></td><td class="res">Millions of MAP</td><td>Challenged security-hardening trade-offs and identified mitigations for customer growth. Projected; implementation not confirmed. 2020.</td><td class="more"></td></tr>
+        <tr><td class="co">Meta</td><td><span class="m">Eligible business Pages</span><span class="sub">Adoption opportunity</span></td><td class="res">18x</td><td>Co-led eligibility expansion and stronger upsell plans for an e-commerce connector. Planned; adoption lift not yet established. 2026.</td><td class="more"></td></tr>
       </tbody>
     </table>
-    </div>
-  </section>
-
-  <section class="cta" aria-label="Book an intro call">
-    <a class="btn" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1aaIY-G2V7JUYt1a1uQU1Mao9Z_8CUlrELxVVna4vM2to6d6K-QeKUmfcJwqwmzdV1tEZQL5GA" target="_blank" rel="noopener">Book an intro call</a>
-  </section>
-
-  <footer class="contact">
-<svg class="mark" viewBox="0 0 147 161" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-<g>
-<path d="M72.9158 30.7296C102.837 25.4842 127.383 43.4882 126.112 60.8547L99.795 60.7779C99.9402 60.0691 93.4319 41.8938 72.9158 30.7296Z" fill="#0A5657"/>
-<g>
-<path d="M144.074 39.7985L126.353 60.4641C126.353 60.4641 126.483 54.3513 113.346 41.7088C96.925 25.9056 79.2035 30.5945 77.0899 31.4628C74.9763 32.3311 58.2302 35.2833 50.101 56.4699C41.9719 77.6565 47.8249 96.4119 47.8249 96.4119C55.954 123.85 73.8379 128.365 73.8379 128.365C42.1016 143.37 20.8357 108.221 20.8357 85.9923C20.8353 78.1775 23.1119 45.0083 36.1185 28.3369C49.1252 11.6654 73.8379 -6.22163 101.64 2.11409C123.881 8.78266 139.196 30.0156 144.074 39.7985Z" fill="url(#paint0_linear_2001_113)"/>
-<path d="M147.001 117.078L128.141 98.3222C125.052 105.616 123.264 115.341 108.794 135.833C97.2177 152.226 76.5479 158.409 67.66 159.451C117.736 165.564 141.419 133.749 147.001 117.078Z" fill="url(#paint1_linear_2001_113)"/>
-</g>
-<path d="M22.9661 65.7247C27.1197 32.6598 50.5756 3.39734 83.9719 0.045296C87.1407 -0.272764 60.8514 1.08753 47.3639 4.0359C8.11713 12.6153 0.000343951 55.0385 0 78.805C-0.000484367 112.276 20.2372 155.933 66.96 158.882C104.338 161.242 122.773 119.403 127.322 98.2382H99.3852C97.9402 108.878 84.1398 130.258 65.0326 129.044C32.3158 126.965 18.8856 98.2069 22.9661 65.7247Z" fill="#0A5657"/>
-</g>
-<defs>
-<linearGradient id="paint0_linear_2001_113" x1="83.9182" y1="0" x2="83.9182" y2="160.22" gradientUnits="userSpaceOnUse">
-<stop stop-color="#055E5F"/>
-<stop offset="1" stop-color="#3B759B"/>
-</linearGradient>
-<linearGradient id="paint1_linear_2001_113" x1="83.9182" y1="0" x2="83.9182" y2="160.22" gradientUnits="userSpaceOnUse">
-<stop stop-color="#055E5F"/>
-<stop offset="1" stop-color="#3B759B"/>
-</linearGradient>
-</defs>
-</svg>
-    <div class="contact-text">
-      <span class="name">Clear Growth Group · San Diego</span>
-      <span>robbie@cleargrowthgroup.com</span>
-    </div>
-  </footer>
+    <ol class="score-list">
+      <li><div class="sc-top"><strong>AI booking product</strong><strong>+20 pts</strong></div><p class="sub">Retention · Experiment</p><p class="sc-what">Restored the entry point lost when ads were turned off.  <a href="/case-studies/reducing-churn/" aria-label="Details: Retention">Details &rarr;</a></p></li>
+      <li><div class="sc-top"><strong>AI booking product</strong><strong>3–4x</strong></div><p class="sub">Revenue per customer · Strategy call</p><p class="sc-what">Showed booking users paid 6x more; company refocused on booking businesses.  <a href="/case-studies/converting-to-paid/" aria-label="Details: Revenue per customer">Details &rarr;</a></p></li>
+      <li><div class="sc-top"><strong>AI booking product</strong><strong>+80 pts</strong></div><p class="sub">Calendar connection · Bug fix</p><p class="sc-what">Found the auth bug stopping most users from connecting Google Calendar.  <a href="/case-studies/lifetime-value/" aria-label="Details: Calendar connection">Details &rarr;</a></p></li>
+      <li><div class="sc-top"><strong>Meta</strong><strong>1.75–2x goal</strong></div><p class="sub">MAU / DAU · User growth</p><p class="sc-what">Led growth priorities, goals and execution across a consumer-product organization. Reported team result, H1 2026.</p></li>
+      <li><div class="sc-top"><strong>Meta</strong><strong>28x</strong></div><p class="sub">Passkey adoption · Security adoption</p><p class="sc-what">Led adoption strategy and experiment reviews for passwordless authentication. Beat goal. Reported, H1 2026.</p></li>
+      <li><div class="sc-top"><strong>Meta</strong><strong>+5%</strong></div><p class="sub">Account-recovery success · Growth recovery</p><p class="sc-what">Led an account-recovery turnaround that helped unblock a major account-platform launch. +5% on Facebook; Instagram back to neutral. Reported, H1 2026.</p></li>
+      <li><div class="sc-top"><strong>Meta</strong><strong>Millions of MAP</strong></div><p class="sub">Monthly active people · User growth</p><p class="sc-what">Debugged authentication-funnel and measurement issues to unlock SMS auto-verification growth. Facebook Android, plus gains on Lite. Reported, 2019–20.</p></li>
+      <li><div class="sc-top"><strong>Meta</strong><strong>Funded</strong></div><p class="sub">Approved headcount · Investment secured</p><p class="sc-what">Built a finance-validated business case to expand investment in account access. Dozens of roles approved; revenue was a forecast, not realized. 2024–25.</p></li>
+      <li><div class="sc-top"><strong>Meta</strong><strong>Tiered budget</strong></div><p class="sub">Daily SMS capacity · Growth capacity</p><p class="sc-what">Introduced tiered budgets and ROI guardrails to fund higher-value growth. Allocated, 2025; savings not quantified.</p></li>
+      <li><div class="sc-top"><strong>Meta</strong><strong>Lower cost</strong></div><p class="sub">Daily paid-SMS cost · Cost reallocation</p><p class="sc-what">Retired lower-return features to redirect a scarce messaging budget toward better opportunities. Developed-market MAU neutral; some MAU loss expected in other markets. Early reading, 2024.</p></li>
+      <li><div class="sc-top"><strong>Meta</strong><strong>Millions of MAP</strong></div><p class="sub">Monthly active people · Growth protection</p><p class="sc-what">Challenged security-hardening trade-offs and identified mitigations for customer growth. Projected; implementation not confirmed. 2020.</p></li>
+      <li><div class="sc-top"><strong>Meta</strong><strong>18x</strong></div><p class="sub">Eligible business Pages · Adoption opportunity</p><p class="sc-what">Co-led eligibility expansion and stronger upsell plans for an e-commerce connector. Planned; adoption lift not yet established. 2026.</p></li>
+    </ol>
+  </div>
+  <div class="wrap">
+  <div class="cta"><a class="btn" href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1aaIY-G2V7JUYt1a1uQU1Mao9Z_8CUlrELxVVna4vM2to6d6K-QeKUmfcJwqwmzdV1tEZQL5GA" target="_blank" rel="noopener">Book an intro call</a></div>
+  </div>
 </main>
 
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="foot-name">Clear Growth Group · San Diego</p>
+    <p><a href="mailto:robbie@cleargrowthgroup.com">robbie@cleargrowthgroup.com</a></p>
+  </div>
+</footer>
+<script src="/assets/menu.js"></script>
 </body>
 </html>
