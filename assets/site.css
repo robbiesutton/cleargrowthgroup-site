@@ -37,7 +37,7 @@ a:hover, a:focus-visible { color: var(--ink-strong); }
 /* Nav */
 .site-nav { padding-top: 26px; }
 .nav-row { display: flex; align-items: center; justify-content: space-between; position: relative; }
-.wordmark { font-weight: 600; font-size: 1.3125rem; line-height: 1.2; text-decoration: none; padding: 4px 2px; }
+.wordmark { font-weight: 600; font-size: 1.5625rem; line-height: 1.2; text-decoration: none; padding: 4px 2px; }
 .menu { position: relative; margin-right: -11px; }
 .menu-btn { width: 44px; height: 44px; display: grid; place-content: center; gap: 5px; background: transparent; border: 0; padding: 0; cursor: pointer; }
 .menu-btn span { display: block; width: 22px; height: 2px; background: var(--ink); transition: transform .2s ease, opacity .2s ease; }
@@ -104,7 +104,7 @@ a:hover, a:focus-visible { color: var(--ink-strong); }
 @media (max-width: 50em) {
   :root { --label-col: 90px; }
   .site-nav { padding-top: 20px; }
-  .wordmark { font-size: 1rem; }
+  .wordmark { font-size: 1.3125rem; }
   .menu { margin-right: -11px; }
   .memo { padding-top: 34px; }
   .memo-head dd.subject { font-size: 1.3125rem; line-height: 1.2; }
